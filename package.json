@@ -2,5 +2,8 @@
   "devDependencies": {
     "chai": "^5.1.2",
     "kraken-node": "^1.0.24"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.26.0"
   }
 }

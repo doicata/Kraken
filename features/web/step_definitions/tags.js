@@ -17,23 +17,33 @@ module.exports = {
     );
     return clicButton.click({ force: true });
   },
-  writeNameTag: async function (driver) {
-    // let title = faker.lorem.words();
-    let title = "New Tag";
+  writeNameTag: async function (driver, name) {
     let textField = await driver.$("#tag-name");
-    await textField.setValue(title);
+    await textField.setValue(name);
   },
   clickDescriptionTag: async function (driver) {
     let contentField = await driver.$("#tag-description");
     return contentField.click({ force: true });
   },
-  writeDescriptionTag: async function (driver) {
-    let contenido = "Contenido de tag";
+  writeDescriptionTag: async function (driver, description) {
     let textField = await driver.$("#tag-description");
-    await textField.setValue(contenido);
+    await textField.setValue(description);
   },
   clickNewTagSave: async function (driver) {
     let clicButton = await driver.$('[data-test-button="save"]');
+    return clicButton.click({ force: true });
+  },
+
+  clickDeleteTag: async function (driver) {
+    // await driver.executeScript('window.scrollTo(0, document.body.scrollHeight);');
+
+    // await driver.pause(2000); 
+    let clicButton = await driver.$('[data-test-button="delete-tag"]');
+    return clicButton.click({ force: true });
+  },
+
+  clickDeleteConfirmTag: async function (driver) {
+    let clicButton = await driver.$('[data-test-button="confirm"]');
     return clicButton.click({ force: true });
   },
 
@@ -71,7 +81,8 @@ module.exports = {
       }
     } else {
       if (enlaceEncontrado) {
-        await enlace.click({ button: "right", force: true });
+        await enlace.click({ button: "Edit tag", force: true });
+        console.log("Click en Edit tag");
       } else {
         console.log(
           'El enlace con el title "' +
@@ -79,6 +90,22 @@ module.exports = {
             '" no existe, no se puede hacer clic.'
         );
       }
+    }
+  },
+
+  clicTag: async function (driver, name) {
+    let enlaces = await driver.$$(
+      '.gh-tags-list-item a[title="Edit tag"].gh-tag-list-title'
+    );
+    for (let enlace of enlaces) {
+      let text = await enlace.getText();
+      console.log("Enlace:", text);
+      if (text.includes(name)) {
+        console.log("Entra: ", text);
+        await enlace.click({ force: true });
+        break;
+      }
+      console.log("No entra: ", text);
     }
   },
 

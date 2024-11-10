@@ -1,0 +1,233 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "ghost;e0006---crear-un-tag-con-nombre-y-descripción",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "E0006 - Crear un tag con nombre y descripción",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 858000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to page \"http://localhost:2368/ghost/#/signin\"",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\web.js:41"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1446000000,
+              "error_message": "Navigation failed because browser has disconnected!\nError: Navigation failed because browser has disconnected!\n    at D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\common\\LifecycleWatcher.js:51:147\n    at D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\node_modules\\puppeteer-core\\lib\\cjs\\vendor\\mitt\\src\\index.js:51:62\n    at Array.map (<anonymous>)\n    at Object.emit (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\node_modules\\puppeteer-core\\lib\\cjs\\vendor\\mitt\\src\\index.js:51:43)\n    at CDPSession.emit (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\common\\EventEmitter.js:72:22)\n    at CDPSession._onClosed (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\common\\Connection.js:271:14)\n    at Connection._onMessage (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\common\\Connection.js:105:25)\n    at WebSocket.<anonymous> (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\node_modules\\puppeteer-core\\lib\\cjs\\puppeteer\\node\\NodeWebSocketTransport.js:13:32)\n    at WebSocket.onMessage (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\node_modules\\ws\\lib\\event-target.js:199:18)\n    at WebSocket.emit (node:events:519:28)\n    at WebSocket.emit (node:domain:488:12)\n    at Receiver.receiverOnMessage (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\node_modules\\ws\\lib\\websocket.js:1022:20)\n    at Receiver.emit (node:events:519:28)\n    at Receiver.emit (node:domain:488:12)\n    at Receiver.dataMessage (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\node_modules\\ws\\lib\\receiver.js:522:14)\n    at Receiver.getData (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\node_modules\\ws\\lib\\receiver.js:440:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I enter email \"d.oicata@uniandes.edu.co\" password \"1090Oicata@\"",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsLogin.js:4"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I wait for 1 seconds",
+            "match": {
+              "location": "node_modules\\kraken-node\\lib\\steps\\both.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I clic to Sign in",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsLogin.js:8"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Página principal del administrador",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsPrincipal.js:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Clic en la sección de Tags",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsPrincipal.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Página de listado de tags",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsTags.js:7"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Clic en el boton New tag",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsTags.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Nombre del tag \"New Tag\"",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsTags.js:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Clic en Descripción del tag",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsTags.js:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Descripción del tag \"Contenido de tag\"",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsTags.js:35"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Clic en el boton guardar",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsTags.js:39"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Clic en la sección de Tags",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsPrincipal.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Valida Tag publicado en la lista de tags",
+            "match": {
+              "location": "features\\web\\step_definitions\\stepsTags.js:43"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 3000000,
+              "error_message": "Error: no current window handle registered\n    at DevToolsDriver.getPageHandle (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\build\\devtoolsdriver.js:192:19)\n    at DevToolsDriver.checkPendingNavigations (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\build\\devtoolsdriver.js:205:25)\n    at Browser.wrappedCommand (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\devtools\\build\\devtoolsdriver.js:123:24)\n    at Browser.wrapCommandFn (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\@wdio\\utils\\build\\shim.js:136:38)\n    at Browser.<anonymous> (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\@wdio\\utils\\build\\shim.js:275:24)\n    at WebClient.<anonymous> (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:109:59)\n    at step (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:59:23)\n    at Object.next (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:40:53)\n    at D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:34:71\n    at new Promise (<anonymous>)\n    at __awaiter (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:30:12)\n    at WebClient.stop (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\kraken-node\\lib\\clients\\WebClient.js:104:16)\n    at WebClient.<anonymous> (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\kraken-node\\lib\\clients\\Client.js:109:51)\n    at step (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\kraken-node\\lib\\clients\\Client.js:67:23)\n    at Object.next (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\kraken-node\\lib\\clients\\Client.js:48:53)\n    at fulfilled (D:\\REPOSITORIOS_UNIANDES\\Kraken\\Kraken\\node_modules\\kraken-node\\lib\\clients\\Client.js:39:58)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@user3",
+            "line": 3
+          },
+          {
+            "name": "@web",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "ghost",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Ghost",
+    "tags": [],
+    "uri": "features\\Ghost.feature"
+  }
+]

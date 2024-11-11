@@ -113,3 +113,7 @@ module.exports = {
     return await this.lastTagCreated(driver, "New Tag", "notClick");
   },
 };
+
+
+
+

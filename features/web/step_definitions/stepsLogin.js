@@ -8,6 +8,10 @@ Before(() => {
   properties = JSON.parse(data);
 });
 
+Given('I navigate to page principal', async function () {
+    await this.driver.url(properties.Url);
+});
+
 //Seccion login
 When('I enter email y password', async function () {
     await logIn(this.driver, properties.Email, properties.Password);
